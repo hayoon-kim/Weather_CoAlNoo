@@ -64,8 +64,12 @@ function App() {
         </div>
       ) : (
         <div className="container">
-          <WeatherBox weather={weather} />
-          <WeatherButton cities={cities} setCity={setCity} />
+          <WeatherBox weather={weather} city={city} />
+          <WeatherButton
+            cities={cities}
+            setCity={setCity}
+            getCurrentLocation={getCurrentLocation}
+          />
         </div>
       )}
     </div>

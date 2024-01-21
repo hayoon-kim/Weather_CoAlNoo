@@ -1,7 +1,6 @@
 import React from "react";
 
 function WeatherBox({ weather }) {
-  console.log(weather);
   return (
     <div className="weather-box">
       <div className="">{weather?.name}</div>
